@@ -56,9 +56,9 @@ const Home = ({ testimonialsRef }) => {
                         </a>
                     </h1>
                     <a
-                        className="nav-item nav-link active"
+                        className="nav-item nav-link active overflow-hidden"
                         style={{
-                            fontSize: "16px",
+                            fontSize: "13px",
                             backgroundColor: "rgb(244,112,37)", // Choose a color you prefer
                             color: "white",
                             borderRadius: "50px", // Fully rounded
@@ -168,7 +168,7 @@ const Home = ({ testimonialsRef }) => {
                 <img
                     src={mobileimg}
                     alt="Hero Background"
-                    className="hero-image img-fluid"
+                    className="hero-image img-fluid h-auto"
                 />
             </div>
 
