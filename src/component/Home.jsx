@@ -164,7 +164,7 @@ const Home = ({ testimonialsRef }) => {
                     className="hero-image img-fluid"
                 />
             </div>
-            <div className="hero-section mhTwo position-relative full-height">
+            <div className="hero-section mhTwo position-relative full-height mb-4">
                 <img
                     src={mobileimg}
                     alt="Hero Background"
