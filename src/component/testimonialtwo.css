@@ -1,0 +1,142 @@
+/* General Styling */
+.home-testimonial {
+    background-color: rgb(0, 63, 139);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.home-testimonial-bottom {
+    background-color: white;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    height: auto; /* Allow height to be dynamic */
+}
+
+.home-testimonial h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.testimonial-inner {
+    position: relative;
+    top: -100px;
+    padding: 0 15px; /* Add padding for small screens */
+    max-width: 100vw; /* Prevent horizontal overflow */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Card container adjustments */
+.testimonial-pos {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+/* Style for each testimonial card */
+.style-3 {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    flex: 1 1 30%; /* Make sure each card takes up 30% of the container by default */
+}
+
+/* Testimonial Card Content */
+.tour-desc {
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 300px; /* Set a minimum height to ensure consistency */
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Prevent overflow */
+    height: 300px; /* Set fixed height */
+}
+
+.color-grey-3 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2;
+    text-align: center;
+}
+
+.link-name {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.link-position {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2;
+    text-align: center;
+}
+
+/* Image Styling */
+.tm-people {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsive styling */
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    .style-3 {
+        width: 30%; /* 3 cards per row on large screens */
+    }
+    .tour-desc{
+        height:100px;
+        min-height: 250px;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .style-3 {
+        width: 45%; /* 2 cards per row on medium screens */
+    }
+}
+
+/* Small Screens */
+@media (max-width: 599px) {
+    .style-3 {
+        width: 100%; /* Full width for small screens */
+        padding: 0 15px; /* Add padding for spacing */
+        margin: 0 auto; /* Center the card */
+    }
+
+    .tour-desc {
+        height: auto; /* Allow height to adjust for small screens */
+    }
+}
+
+/* Slider Adjustments */
+.slick-slide {
+    padding: 0 5px; /* Reduce padding to avoid overflow */
+    box-sizing: border-box; /* Prevent overflow issues */
+}
+
+.slick-prev,
+.slick-next {
+    color: #333;
+    z-index: 1; /* Ensure arrows are clickable */
+}
+
+/* Carousel Wrapper Margins */
+.carousel-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

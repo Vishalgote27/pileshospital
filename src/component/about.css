@@ -1,0 +1,87 @@
+/* Container for the entire About section */
+.about-container {
+    height: auto;
+    overflow: hidden;
+    margin-Bottom: 5px;
+}
+
+/* Left Side Styling */
+.about-left {
+    background-color: #003f8b;
+    color: #fff;
+    padding: 30px;
+    background-image: url('https://source.unsplash.com/random/1920x1080');
+    /* Background Image */
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    /* Set to 60% of the viewport height */
+}
+
+/* Right Side Styling */
+.about-right {
+    min-height: 60vh;
+    /* Set to 60% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the full container */
+}
+
+/* Logo Image Styling */
+.cir {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Makes the image circular */
+    background-color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .about-left,
+    .about-right {
+        min-height: 40vh;
+        /* Adjust height for smaller screens */
+    }
+
+    .about-content {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .cir {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about-left,
+    .about-right {
+        min-height: 10vh;
+        /* Further reduce height for very small screens */
+    }
+
+    .about-content {
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .cir {
+        width: 80px;
+        height: 50px;
+    }
+}

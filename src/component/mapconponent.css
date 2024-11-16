@@ -1,0 +1,15 @@
+.map-container {
+    width: 100%;       /* Full width of the parent container */
+    max-width: 600px;  /* Max width to prevent excessive scaling on larger screens */
+    height: 0;         /* Reset height for aspect ratio control */
+    /* padding-bottom:%;   */
+    position: relative;  /* For absolute positioning of iframe */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

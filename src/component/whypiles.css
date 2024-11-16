@@ -1,0 +1,55 @@
+/* Default Styles */
+.text-image-container {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Text and Image Sections */
+.text-section,
+.image-section {
+    min-height: 100%; /* Ensures both divs have the same height */
+}
+
+.text-section {
+    background-color: #003f8b;
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Mobile View Styles */
+@media (max-width: 576px) {
+    .dentist-section {
+        width: 100vw;  /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        padding: 0;    /* Remove padding */
+        margin: 0;     /* Remove margin */
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    .text-image-container {
+        flex-direction: column; /* Stack text and image vertically */
+        height: 100%; /* Ensure full height */
+    }
+
+    .text-section {
+        padding: 20px; /* Adjust padding for mobile */
+        height: 50%;   /* Use half of the height for text */
+    }
+
+    .image-section {
+        height: 50%;   /* Use the other half of the height for image */
+    }
+
+    .wh {
+        width: 80%;
+    }
+}

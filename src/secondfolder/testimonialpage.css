@@ -1,0 +1,40 @@
+.card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for the testimonial card */
+.card {
+    background-color: #f3f7fa; /* Custom card color */
+    border: none; /* Removes card border */
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Bottom shadow */
+    padding: 20px;
+    min-height: 200px; /* Increases card height */
+}
+
+.card-title {
+    font-size: 20px; /* Increased font size */
+    font-weight: bold;
+    color: rgb(0, 63, 139);
+}
+
+.card-text {
+    font-size: 18px; /* Increased font size */
+    color: #333; /* Darker text color for better readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}

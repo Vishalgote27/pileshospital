@@ -1,0 +1,80 @@
+.map-responsive {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #ddd; /* Optional background for better visual */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Mobile View Specific Styling */
+@media (max-width: 599px) {
+    .map-responsive {
+        display: flex;  
+        justify-content: center; /* Horizontal center */
+        align-items: center;  
+         padding-bottom: 0; 
+        height: 250px;   
+        width:auto;
+        margin-Left:60px;
+    }
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(0, 63, 139); /* Default icon color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.whatsapp-icon {
+    background-color: #fff; /* White background for WhatsApp */
+}
+
+.instagram-icon {
+    background-color: #fff; /* White background for Instagram */
+}
+
+.facebook-icon {
+    background-color: #fff; /* Facebook's blue background */
+}
+
+.icon-circle:hover {
+    background-color: rgb(0, 63, 139); /* Hover background color */
+    color: #fff; /* Icon color on hover */
+}
+
+.icon-circle:hover .whatsapp-icon {
+    background-color: #25d366; /* WhatsApp green on hover */
+}
+
+.icon-circle:hover .instagram-icon {
+    background-color: #e4405f; /* Instagram pink on hover */
+}
+
+.icon-circle:hover .facebook-icon {
+    background-color: #1877f2; /* Facebook blue on hover */
+}

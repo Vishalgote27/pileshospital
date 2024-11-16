@@ -1,0 +1,73 @@
+/* Container for the entire gallery */
+.gallery-container {
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin: 0;     /* Remove any margins */
+    padding: 0;    /* Remove any padding */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Wrapper for individual images */
+.image-wrapper {
+    width: 100%;  /* Full width of the container */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.gallery-image {
+    width: 100%;      /* Ensure image fills the container width */
+    height: 100%;     /* Ensure image fills the container height */
+    object-fit: contain; /* Ensure the full image is displayed without cropping */
+    border-radius: 10px;
+}
+
+/* Slick Navigation Button Styling */
+.slick-prev,
+.slick-next {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Pagination Dots */
+.slick-dots li button {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.slick-dots li.slick-active button {
+    background: #fff;
+}
+
+/* Responsive Adjustments for large screens (1024px+) */
+@media (max-width: 1024px) {
+    .image-wrapper {
+        height: 100vh; /* Full height for large screens */
+    }
+}
+
+/* For tablets (768px - 1024px) */
+@media (max-width: 768px) {
+    .image-wrapper {
+        height: 100vh; /* Full height for tablets */
+    }
+}
+
+/* For mobile devices (576px - 768px) */
+@media (max-width: 576px) {
+    .image-wrapper {
+        height: 100vh; /* Full height for mobile */
+    }
+}
