@@ -38,7 +38,7 @@ const Home = ({ testimonialsRef }) => {
                         <a href="/"
                             className="nav-item nav-link active"
                             style={{
-                                fontSize: "15px",
+                                fontSize: "13px",
                                 backgroundColor: "rgb(244,112,37)", // Choose a color you prefer
                                 color: 'white',
                                 borderRadius: "50px", // Fully rounded
@@ -58,7 +58,7 @@ const Home = ({ testimonialsRef }) => {
                     <a
                         className="nav-item nav-link active overflow-hidden"
                         style={{
-                            fontSize: "13px",
+                            fontSize: "12px",
                             backgroundColor: "rgb(244,112,37)", // Choose a color you prefer
                             color: "white",
                             borderRadius: "50px", // Fully rounded
@@ -168,7 +168,7 @@ const Home = ({ testimonialsRef }) => {
                 <img
                     src={mobileimg}
                     alt="Hero Background"
-                    className="hero-image img-fluid h-auto"
+                    className="hero-image img-fluid h-100"
                 />
             </div>
 
